@@ -8,23 +8,26 @@
 }
 
 body {
-    background-color: #1e1e32;
+    background-color: hsl(0, 0%, 8%);
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center; 
   align-items: center;     
-  height: 100vh;     
+  height: 100vh;
+  overflow: auto;     
 }
 
 .content {
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
-  width: 350px;
-  background-color: #222147; 
+  width: 370px;
+  background-color: hsl(0, 0%, 12%); 
   color: #d1d1f0; 
+  margin: 20px;
 }
 
 .content img{
@@ -36,23 +39,24 @@ body {
 .content .title{
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 10px 0;
     gap: 10px;
 }
 
-.title h3{
-    font-size: 20px;
-    font-weight: 600;
+.title h1{
+    font-size: 25px;
+    font-weight: 700;
     color: #ffffff;
 }
 
-.title h4{
+.title h3{
     font-size: 16px;
-    color: #ff6ec7; 
+    font-weight: 600;
+    color: hsl(75, 94%, 57%); 
 }
 
 .title p{
-    padding-top: 15px;
+    padding-top: 14px;
     font-style: italic;
     color: #a3a3cc; 
 }
@@ -67,9 +71,9 @@ body {
     text-decoration: none;
     padding: 15px 0;
     font-weight: bold;
-    background-color: #5c4d99;
+    background-color:  hsl(0, 0%, 20%);
     color: #ffffff; 
-    margin: 5px 0;
+    margin: 7px 0;
     font-size: 14px;
     border-radius: 10px;
     transition: .3s ease;
@@ -77,6 +81,50 @@ body {
 }
 
 .links a:hover{
-    background-color: #ff6ec7; 
+    background-color: hsl(75, 94%, 57%); 
     color: #000000; 
+}
+
+@media (max-width:900px) {
+    .content{
+        width: 350px;
+    }
+    .content img{
+        height: 90px;
+    }
+    .title{
+        gap: 8px;
+        margin: 15px 0;
+    }
+    .title h1{
+        font-size: 22px;
+    }
+    .title h3{
+        font-size: 15px;
+    }
+    .title p{
+        font-size: 13px;
+    }
+    .attribution{
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .content{
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 1.5rem;
+    }
+    .content img{
+        height: 80px;
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .title h3{
+        font-size: 14px;
+    }
+    .title p{
+        font-size: 12px;
+    }
 }
