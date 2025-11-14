@@ -43,13 +43,13 @@ body {
     gap: 10px;
 }
 
-.title h2{
+.title h1{
     font-size: 25px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.title h3{
+.title h2{
     font-size: 16px;
     font-weight: 600;
     color: hsl(75, 94%, 57%); 
@@ -96,10 +96,10 @@ body {
         gap: 8px;
         margin: 15px 0;
     }
-    .title h2{
+    .title h1{
         font-size: 22px;
     }
-    .title h3{
+    .title h2{
         font-size: 15px;
     }
     .title p{
@@ -119,10 +119,10 @@ body {
     .content img{
         height: 80px;
     }
-    .title h2{
+    .title h1{
         font-size: 20px;
     }
-    .title h3{
+    .title h2{
         font-size: 14px;
     }
     .title p{
