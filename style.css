@@ -16,8 +16,7 @@ body {
   flex-direction: column;
   justify-content: center; 
   align-items: center;     
-  height: 100vh;
-  overflow: auto;     
+  min-height: 100vh;
 }
 
 .content {
@@ -28,6 +27,7 @@ body {
   background-color: hsl(0, 0%, 12%); 
   color: #d1d1f0; 
   margin: 20px;
+  overflow: hidden;     
 }
 
 .content img{
@@ -43,7 +43,7 @@ body {
     gap: 10px;
 }
 
-.title h1{
+.title h2{
     font-size: 25px;
     font-weight: 700;
     color: #ffffff;
@@ -96,7 +96,7 @@ body {
         gap: 8px;
         margin: 15px 0;
     }
-    .title h1{
+    .title h2{
         font-size: 22px;
     }
     .title h3{
@@ -112,13 +112,14 @@ body {
 @media (max-width: 400px) {
     .content{
         max-width: 300px;
-        margin: 20px auto;
+        margin: 20px;
         padding: 1.5rem;
+        width: 90%
     }
     .content img{
         height: 80px;
     }
-    .title h1{
+    .title h2{
         font-size: 20px;
     }
     .title h3{
